@@ -20,4 +20,4 @@ Project to demonstrate Get, Post, Put, Delete calls to handle data on MySQL Serv
 - Templating with Handlebars
 - Deployed via Heroku
 
-![Screnshot]()
+![Screnshot](https://raw.githubusercontent.com/Jack87/EatDaDonut/master/public/assets/img/eatDaDonutScreenshot.png)
