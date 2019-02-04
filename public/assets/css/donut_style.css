@@ -1,36 +1,59 @@
-body {
-    background: #cff
+html, body {
+    background: #cff;
+    font-family: 'Rock Salt', cursive;
 }
   
-  h2, h3, h4 {
-    font-weight: bold; }
+h2, h3, h4 {
+    font-weight: bold; 
+}
+
+button {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.title01 {
+    text-align: center;
+}
+
+.container {
+    padding: 0 1rem 1rem 1rem; 
+    font-family: 'Caveat', cursive;
+}
   
-  .container {
-    padding: 0 1rem 1rem 1rem; }
-  
-  header img {
+.simpFont{
+    font-family: 'Rock Salt', cursive;
+}
+    
+header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 33%;}
+    width: 33%;
+}
   
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .addDonut, .donuts {
-      padding: 0 1rem; } }
+      padding: 0 1rem; 
+    } 
+}
   
-  .addDonut {
+.addDonut {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #ccc; }
+    border-bottom: 1px solid #ccc; 
+}
   
-  .donuts .row {
-    margin-bottom: 1rem; }
+.donuts .row {
+    margin-bottom: 1rem; 
+}
   
-  .donuts h2 {
-    margin-bottom: 1rem; }
+.donuts h2 {
+    margin-bottom: 1rem; 
+}
   
-  footer {
+footer {
     padding: 1rem 0;
     margin: 1rem 0;
-    border-top: 1px solid #ccc; }
+    border-top: 1px solid #ccc; 
+}
   

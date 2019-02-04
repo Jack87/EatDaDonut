@@ -1,15 +1,15 @@
 
 <div class="addDonut">
-  <h2>Add a donut to your must munch list!</h2>
+  <h2 class="simpFont">Add a donut to your must munch list!</h2>
   <div class="container">
     <form action="/" method="POST">
       <div class="form-group row align-items-center">
-        <label for="inputEmail3" class="col-sm-2 col-form-label"><strong>Donut Name</strong></label>
+        <label for="inputEmail3" class="col-sm-2 col-form-label"><strong><i class="fas fa-cookie"></i> Donut Name</strong></label>
         <div class="col-sm-8">
           <input type="text" class="form-control" name="donutName" id="donutName" placeholder="e.g. Glazed Donut" required>
         </div>
         <div class="col-sm-2">
-          <button type="submit" class="btn btn-primary">Add to Munch!</button>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Add to Munch!</button>
         </div>
       </div>
     </form>
@@ -19,7 +19,7 @@
 <div class="donuts row">
 
   <div class="col col toBeEaten">
-    <h2>Must Munch List!</h2>
+    <h2><i class="fas fa-list-ul"></i> Must Munch List!</h2>
     <hr>
     <!-- list of donuts not yet eaten -->
     {{#each donuts}}
@@ -27,23 +27,22 @@
     <div class="donut row">
       <div class="col">
         <span class="h4" id="ready{{id}}">{{donut_name}}</span>
-        <hr>
       </div>
       <div class="col">
         <form action="/?_method=PUT" method="POST">
-          <button class="btn btn-success btn-sm">Munch Now!</button>
+          <button class="btn btn-success btn-sm"><i class="fas fa-cookie-bite"></i> Munch Now!</button>
           <input type="hidden" name="id" value="{{id}}">
         </form>
       </div>
-      
     </div> <!-- donut -->
+    <hr>
     {{/unless}}
     {{/each}}
 
   </div> <!-- toBeEaten -->
 
   <div class="col col eaten">
-    <h2>Munched Already, YUM!</h2>
+    <h2><i class="fab fa-delicious"></i> Munched Already, YUM!</h2>
     <hr>
     <!-- list of donuts already eaten -->
     {{#each donuts}}
@@ -51,15 +50,15 @@
     <div class="donut row">
       <div class="col">
         <span class="h4" id="eaten{{id}}">{{donut_name}}</span>
-        <hr>
       </div>
       <div class="col">
         <form action="/?_method=DELETE" method="POST">
-          <button class="btn btn-danger btn-sm">Delete Donut!</button>
+          <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete Donut!</button>
           <input type="hidden" name="deleteId" value="{{id}}">
         </form>
       </div>
     </div> <!-- donut -->
+    <hr>
     {{/if}}
     {{/each}}
 
