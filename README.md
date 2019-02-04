@@ -2,9 +2,6 @@
 
 Project to demonstrate Get, Post, Put, Delete calls to handle data on MySQL Server
 
-
-
-
 **Link to App**: https://sheltered-woodland-25800.herokuapp.com/
 
 ## How It Works
